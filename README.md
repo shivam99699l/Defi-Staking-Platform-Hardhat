@@ -23,11 +23,9 @@ A simple full-stack staking dApp (Hardhat + Solidity + React) on Sepolia.
 ## 📍 Deployed on Sepolia
 | Contract | Address | Etherscan |
 |---|---|---|
-| StakeToken | `0x49f3C5E340eC9291c0a8A1353714b3F88502431e` | https://sepolia.etherscan.io/address/0x49f3C5E340eC9291c0a8A1353714b3F88502431e#code |
-
-| RewardToken | `0xEa4Fc783A3Af0088485d9C0cba11d69C24ED5D9F` | https://sepolia.etherscan.io/address/0xEa4Fc783A3Af0088485d9C0cba11d69C24ED5D9F#code |
-
-| Staking | `0x3DAC88046721a23ea92e89286b49998d9f99128F` | https://sepolia.etherscan.io/address/0x3DAC88046721a23ea92e89286b49998d9f99128F#code |
+| StakeToken | `0x49f3C5E340eC9291c0a8A1353714b3F88502431e` | [View on Etherscan](https://sepolia.etherscan.io/address/0x49f3C5E340eC9291c0a8A1353714b3F88502431e#code) |
+| RewardToken | `0xEa4Fc783A3Af0088485d9C0cba11d69C24ED5D9F` | [View on Etherscan](https://sepolia.etherscan.io/address/0xEa4Fc783A3Af0088485d9C0cba11d69C24ED5D9F#code) |
+| Staking | `0x3DAC88046721a23ea92e89286b49998d9f99128F` | [View on Etherscan](https://sepolia.etherscan.io/address/0x3DAC88046721a23ea92e89286b49998d9f99128F#code) |
 
 ## ⚙️ Local Setup (Step-by-step)
 1. Clone repo:
