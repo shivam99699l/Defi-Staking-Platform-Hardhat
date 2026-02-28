@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;900&display=swap");
+
+:root {
+  --primary-color: #0ac4e0;
+  --bg-color: #f2f2f2;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(47, 47, 47);
+}
+
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.navbar {
+  width: 100%;
+  height: 72px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-bottom: 0.4px solid rgb(182, 182, 182);
+}
+
+.navbar-btns,
+.navbar-acc {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.connected-ac,
+.network {
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.connect-wallet-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #0ac4e0;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.connect-wallet-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.wallet-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+  stroke-width: 2.5;
+  flex-shrink: 0;
+}
+
+.wallet-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.claim-reward button {
+  width: 160px;
+  color: var(--primary-color);
+  border-style: none;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 18px;
+}
+
+.top-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-radius: 24px;
+  padding-top: 18px;
+}
+
+.staked-amount,
+.reward-rate,
+.earned-reward {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  background-color: white;
+}
+
+.staked-amount {
+  padding-top: 24px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.reward-rate {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.earned-reward {
+  padding-bottom: 24px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.main-content {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button-section {
+  display: flex;
+  width: 500px;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+
+.button-section button {
+  border: none;
+  background-color: white;
+  width: 100px;
+  padding: 10px 18px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 12px;
+  cursor: pointer;
+  color: black;
+}
+
+.button-section button.active {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+.stake-wrapper {
+  width: 500px;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  background-color: white;
+}
+
+.token-amount-form,
+.stake-amount-form,
+.withdraw-form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 36px;
+}
+
+.token-amount-form {
+  padding-bottom: 0;
+}
+
+.stake-amount-form {
+  padding-top: 36px;
+  padding-bottom: 12px;
+}
+
+.token-input-label,
+.stake-input-label,
+.withdraw-form label {
+  opacity: 0.8;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.token-amount-form input,
+.stake-amount-form input,
+.withdraw-form input {
+  border-style: none;
+  background-color: var(--bg-color);
+  padding: 24px;
+  width: 100%;
+  border-radius: 12px;
+  border: 0.8px solid var(--primary-color);
+  opacity: 0.4;
+}
+
+.token-amount-form button,
+.stake-amount-form button,
+.withdraw-form button {
+  width: 100%;
+  padding: 14px 0;
+  margin-top: 12px;
+  font-size: 12px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+}
+
+.toast {
+  z-index: 9999;
+}
+
+@media (max-width: 640px) {
+  .staked-amount,
+  .reward-rate,
+  .earned-reward,
+  .button-section,
+  .stake-wrapper,
+  .token-amount-form,
+  .stake-amount-form,
+  .withdraw-form {
+    width: 94%;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .navbar-btns,
+  .navbar-acc {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
